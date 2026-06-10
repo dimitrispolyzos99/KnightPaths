@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		561CE5FB2FD88F2400B1F49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 561CE5D52FD86B8600B1F49C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 561CE5DC2FD86B8600B1F49C;
+			remoteInfo = KnightPaths;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		561CE5DD2FD86B8600B1F49C /* KnightPaths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightPaths.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561CE5F72FD88F2400B1F49C /* KnightPathsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightPathsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = KnightPaths;
 			sourceTree = "<group>";
 		};
+		561CE5F82FD88F2400B1F49C /* KnightPathsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KnightPathsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		561CE5DA2FD86B8600B1F49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561CE5F42FD88F2400B1F49C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				561CE5DF2FD86B8600B1F49C /* KnightPaths */,
+				561CE5F82FD88F2400B1F49C /* KnightPathsTests */,
 				561CE5DE2FD86B8600B1F49C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				561CE5DD2FD86B8600B1F49C /* KnightPaths.app */,
+				561CE5F72FD88F2400B1F49C /* KnightPathsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 561CE5DD2FD86B8600B1F49C /* KnightPaths.app */;
 			productType = "com.apple.product-type.application";
 		};
+		561CE5F62FD88F2400B1F49C /* KnightPathsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 561CE5FD2FD88F2400B1F49C /* Build configuration list for PBXNativeTarget "KnightPathsTests" */;
+			buildPhases = (
+				561CE5F32FD88F2400B1F49C /* Sources */,
+				561CE5F42FD88F2400B1F49C /* Frameworks */,
+				561CE5F52FD88F2400B1F49C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				561CE5FC2FD88F2400B1F49C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				561CE5F82FD88F2400B1F49C /* KnightPathsTests */,
+			);
+			name = KnightPathsTests;
+			packageProductDependencies = (
+			);
+			productName = KnightPathsTests;
+			productReference = 561CE5F72FD88F2400B1F49C /* KnightPathsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					561CE5DC2FD86B8600B1F49C = {
 						CreatedOnToolsVersion = 26.5;
+					};
+					561CE5F62FD88F2400B1F49C = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 561CE5DC2FD86B8600B1F49C;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				561CE5DC2FD86B8600B1F49C /* KnightPaths */,
+				561CE5F62FD88F2400B1F49C /* KnightPathsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		561CE5DB2FD86B8600B1F49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561CE5F52FD88F2400B1F49C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		561CE5F32FD88F2400B1F49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		561CE5FC2FD88F2400B1F49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 561CE5DC2FD86B8600B1F49C /* KnightPaths */;
+			targetProxy = 561CE5FB2FD88F2400B1F49C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		561CE5E62FD86B8C00B1F49C /* Debug */ = {
@@ -310,6 +385,48 @@
 			};
 			name = Release;
 		};
+		561CE5FE2FD88F2400B1F49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCBA6PK5AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dimitris-Polyzos.KnightPathsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnightPaths.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KnightPaths";
+			};
+			name = Debug;
+		};
+		561CE5FF2FD88F2400B1F49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCBA6PK5AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dimitris-Polyzos.KnightPathsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnightPaths.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KnightPaths";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +444,15 @@
 			buildConfigurations = (
 				561CE5E92FD86B8C00B1F49C /* Debug */,
 				561CE5EA2FD86B8C00B1F49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		561CE5FD2FD88F2400B1F49C /* Build configuration list for PBXNativeTarget "KnightPathsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				561CE5FE2FD88F2400B1F49C /* Debug */,
+				561CE5FF2FD88F2400B1F49C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,7 +11,7 @@ import SwiftUI
 struct KnightPathsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SizeSelectionView()
         }
     }
 }
