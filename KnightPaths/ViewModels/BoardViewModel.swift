@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 
+@MainActor
 final class BoardViewModel: ObservableObject {
     var size: Int
     @Published var start: Square?
